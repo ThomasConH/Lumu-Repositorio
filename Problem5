@@ -1,0 +1,18 @@
+create table students(
+	id_student int,
+	name_student varchar(25),
+	age_student int
+);
+--Estas lineas de codigo hace la creacion de la tabla "students" con las columbas id_student, name_student, age_student
+
+insert into students
+Values
+	(123456, 'Thomas Alvarez', 15),
+	(123654, 'Juan Rodriguez', 19),
+	(156783, 'Alejandro Guerrero', 17),
+	(987263, 'Jessica Rodriguez', 23),
+	(873974, 'Blanca Maldonado', 16)
+--Estas lineas de codigo insertan en la tabla los nombres, las edades y los IDs 
+	
+Select name_student, age_student from students where age_student > 18 
+--Esta linea de codigo invoca el nombre de los estudiantes, y su edad siempre y cuando sean mayores de 18 años
